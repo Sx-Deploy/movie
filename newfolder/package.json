@@ -1,0 +1,17 @@
+{
+  "name": "bupt-movie",
+  "version": "1.0.0",
+  "description": "movie-search",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.6.4",
+    "lin-ui": "^0.9.2",
+    "weui-wxss": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shendoudou",
+  "license": "ISC"
+}

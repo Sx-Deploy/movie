@@ -1,0 +1,91 @@
+{
+     "description": "项目配置文件",
+     "packOptions": {
+          "ignore": []
+     },
+     "setting": {
+          "urlCheck": true,
+          "es6": true,
+          "enhance": false,
+          "postcss": true,
+          "preloadBackgroundData": false,
+          "minified": true,
+          "newFeature": false,
+          "coverView": true,
+          "nodeModules": false,
+          "autoAudits": false,
+          "showShadowRootInWxmlPanel": true,
+          "scopeDataCheck": false,
+          "uglifyFileName": false,
+          "checkInvalidKey": true,
+          "checkSiteMap": true,
+          "uploadWithSourceMap": true,
+          "compileHotReLoad": false,
+          "useMultiFrameRuntime": true,
+          "useApiHook": true,
+          "useApiHostProcess": true,
+          "babelSetting": {
+               "ignore": [],
+               "disablePlugins": [],
+               "outputPath": ""
+          },
+          "enableEngineNative": false,
+          "bundle": false,
+          "useIsolateContext": true,
+          "useCompilerModule": true,
+          "userConfirmedUseCompilerModuleSwitch": false,
+          "userConfirmedBundleSwitch": false,
+          "packNpmManually": false,
+          "packNpmRelationList": [],
+          "minifyWXSS": true
+     },
+     "compileType": "miniprogram",
+     "libVersion": "2.14.1",
+     "appid": "wx310b845c3a62d4e5",
+     "projectname": "%E5%BD%B1%E8%A7%86%E5%88%86%E6%9E%90",
+     "debugOptions": {
+          "hidedInDevtools": []
+     },
+     "scripts": {},
+     "isGameTourist": false,
+     "simulatorType": "wechat",
+     "simulatorPluginLibVersion": {},
+     "condition": {
+          "plugin": {
+               "list": []
+          },
+          "game": {
+               "list": []
+          },
+          "gamePlugin": {
+               "list": []
+          },
+          "miniprogram": {
+               "list": [
+                    {
+                         "name": "pages/homepage/homepage",
+                         "pathName": "pages/homepage/homepage",
+                         "query": "",
+                         "scene": null
+                    },
+                    {
+                         "name": "pages/test/test",
+                         "pathName": "pages/test/test",
+                         "query": "",
+                         "scene": null
+                    },
+                    {
+                         "name": "pages/demo1/demo1",
+                         "pathName": "pages/demo1/demo1",
+                         "query": "",
+                         "scene": null
+                    },
+                    {
+                         "name": "pages/predicted/predicted",
+                         "pathName": "pages/predicted/predicted",
+                         "scene": null
+                    }
+               ]
+          }
+     }
+}

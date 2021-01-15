@@ -1,0 +1,71 @@
+<!--pages/predicted/predicted.wxml-->
+ 
+  
+ 
+ 
+
+   <radio-group bindchange="radioChange">
+     <radio class="head" value="1"  bind:tap="onClick"          >按预测票房排序</radio>  <radio class="head" value="2"   bind:tap="onClick"     >按时间排序</radio>  
+     <radio class="head" value="3">按热度排序</radio>
+   </radio-group>
+   <van-row style="margin-down:10px">
+     <van-col span="18"  class="movie" >电影序列
+     </van-col>
+    
+     <van-col span="6" class="boxoffice">票房
+     </van-col>
+    </van-row>
+    <view class="card" wx:for="{{list}}" wx:key="id"  >
+    
+      <van-row>
+  <van-col span="16">
+    
+    <van-card  num-class="display:none"
+   
+   currency=""
+   tag="{{item.releaseTime}}"
+   price="{{item.title}}"
+   desc="{{item.type}}"
+   title="{{item.actors[0].name}} {{item.actors[1].name}} {{item.actors[2].name}}"
+   thumb="https://img2020.cnblogs.com/blog/1648896/202101/1648896-20210111190624889-1300685743.png"
+   />
+   
+   </van-col>
+  <van-col span="8">  
+    <van-circle  value="{{ item.expectedBoxoffice/max*100 }}"  layer-color="#eeeeee"
+  color="#ee0a24"  text="{{item.expectedBoxoffice}} 万"  ></van-circle></van-col>
+   
+</van-row>
+  
+ 
+    
+
+  
+</view>
+
+ 
+ 
+ 
+
+
+
+<view>
+  <van-divider />
+</view>
+<view wx:if="{{flag}}" style="margin:15rpx">
+  <van-row>
+    
+  <van-col offset="2" span="24">
+    <van-button   plain type="info" size="mini" custom-style="width:150rpx;margin-right:65rpx;">
+        第{{page}}页</van-button>
+    <van-button  data-cid='-1'  bind:click="onClick" plain type="info" size="mini" custom-style="width:150rpx;margin-right:65rpx;">上一页</van-button>
+  <van-button plain data-cid='1'  bind:click="onClick" type="info" size="mini" custom-style="width:150rpx">下一页</van-button>
+</van-col>
+</van-row>
+ 
+</view>
+  
+   
+
+
+ 

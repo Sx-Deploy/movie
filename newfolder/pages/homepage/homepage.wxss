@@ -1,0 +1,36 @@
+/* pages/homepage/homepage.wxss */
+.father{
+  position: relative;
+}
+.red{
+  align-self: start;
+  display: inline-block;
+  text-align: center;
+ font: 1em sans-serif;
+  color:red
+
+}
+.search{
+  position: absolute;
+   left: 200rpx;
+   width: 300rpx;
+   border-radius: 2rpx;
+   border: 5rpx solid gray;
+  /* background-color: brown; */
+  
+}
+.search_top{
+  width: 750rpx;
+  height: 100rpx;
+  position: relative;
+    
+  
+}
+
+.search_btn{
+ 
+  /* background-color: green; */
+ 
+  /* position: absolute; */
+ 
+}

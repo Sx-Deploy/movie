@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/predict/predict",
+    "pages/predicted/predicted",
+    "pages/demo2/demo2",
+    "pages/homepage/homepage", 
+    "pages/my/my",
+    "pages/demo1/demo1",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/predict/predict",
+        "text": "影视预测",
+        "iconPath": "/pages/images/创作(1).png",
+        "selectedIconPath": "/pages/images/创作.png"
+      },
+      {
+        "pagePath": "pages/predicted/predicted",
+        "text": "影视搜索",
+        "iconPath": "/pages/images/搜索.png",
+        "selectedIconPath": "/pages/images/搜索(1).png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "待开发ing",
+        "iconPath": "/pages/images/users.png",
+        "selectedIconPath": "/pages/images/users(1).png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/pages/images/my.png",
+        "selectedIconPath": "/pages/images/my(1).png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

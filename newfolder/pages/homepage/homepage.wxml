@@ -1,0 +1,43 @@
+<!--pages/homepage/homepage.wxml-->
+<view class="father">
+   <text class="red">您好!!! 我是1影视分析首页,请按（电影名称、导演、编剧、演员）进行搜索</text>
+ 
+ 
+   <view class="search_top" hover-class="none" hover-stop-propagation="false">
+         <input class="search" type=""> 
+           
+         </input>
+         
+      
+         
+          
+          
+        
+   </view>
+   <swiper class="" indicator-dots="false" indicator-color="rgba(0,0,0,.3)" autoplay="false" 
+         current="0" current-item-id="" interval="5000" duration="1000" circular="false" vertical="false" 
+          previous-margin="false" next-margin="0px" display-multiple-items="1" skip-hidden-item-layout="false" bindchange="" bindanimationfinish="">
+         <image class="" src="https://img.alicdn.com/imgextra/i4/1459950132/O1CN01arPaR31CqUv5Qr8QK_!!0-saturn_solar.jpg_468x468q75.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+               
+         </image>
+   </swiper>
+   <view class="" hover-class="none" hover-stop-propagation="false">
+          <button class="btn" type="primary"  >
+           搜索
+           </button>  
+              
+   </view>
+   <!-- <view>{{person}}</view>
+   <view>{{person}}</view>
+   <view>{{person}}</view>
+   <view>{{person}}</view> -->
+
+   <!-- <view wx:for="{{list}}" 
+    
+   wx:for-index="s"
+   wx:key="id">
+   索引：{{item.id}}
+    值：{{item.name}}
+   </view> -->
+ </view>
+<!-- <text>pages/homepage/homepage.wxml</text> -->
