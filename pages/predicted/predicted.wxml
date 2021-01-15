@@ -1,0 +1,148 @@
+<!--pages/predicted/predicted.wxml-->
+<van-tabs animated="true"  bind:change="navi" data-cid="10" bind:click="onClick">
+  
+  <van-tab title="电影" name="movies" data-cid="0" bind:tap="onClick"> 
+    <van-search 
+  value="{{ value }}"
+  placeholder="请输入{{title}}名称"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+  background="#4fc08d"
+>
+<view slot="action"  >
+  <span data-cid="0" bind:tap="onClick">搜索</span>
+  
+
+</view>
+</van-search>
+    
+    <view class="card" wx:for="{{list}}" wx:key="id">
+  <van-card
+  num=""
+  currency=""
+  price="{{item.movie.title}}"
+  desc="{{item.movie.type}}"
+  title="{{item.actors[0].name}} {{item.actors[1].name}} {{item.actors[2].name}}"
+  thumb="{{item.movie.imageName}}"
+  
+ />  
+
+  
+</view>
+
+</van-tab>
+  <van-tab title="导演" name="directors">
+    <van-search 
+  value="{{ value }}"
+  placeholder="请输入{{title}}名称"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+  background="#4fc08d"
+>
+<view slot="action"  data-cid="0" bind:tap="onClick">搜索</view>
+</van-search>
+    
+    <view class="card" wx:for="{{list}}" wx:key="id">
+  <van-card
+  num=""
+  currency=""
+  tag="{{item.director.location}}"
+  price="{{item.director.name}}"
+  desc="{{item.director.occupation}} "
+  title="代表作：{{item.amovies[0].title}} {{item.amovies[1].title}} {{item.amovies[2].title}} {{item.amovies[3].title}} {{item.amovies[4].title}}"
+  thumb="{{item.director.imageName}} "
+  >
+
+ <view slot="price-top" style="">
+  <van-button size="mini" custom-style="margin-right:120rpx;width:150rpx;">查看详细信息</van-button>
+   
+ </view>
+ <view slot="tag" style="backgroundcolor:green;">
+    
+   
+ </view>
+</van-card>
+</view>
+     </van-tab>
+  
+  <van-tab title="演员" name="actors" > 
+    <van-search 
+  value="{{ value }}"
+  placeholder="请输入{{title}}名称"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+  background="#4fc08d"
+>
+<view slot="action"  data-cid="0" bind:tap="onClick">搜索</view>
+</van-search>
+    
+    <view class="card" wx:for="{{list}}" wx:key="id">
+  <van-card
+  num=""
+  currency=""
+  price="{{item.actor.name}}"
+  desc="{{item.actor.birthday}}"
+  title="{{item.actor.location}}  "
+  thumb="{{item.actor.imageName}} "
+  
+ />  
+
+  
+</view>
+  </van-tab>
+  <van-tab title="编剧" name="scenarists"> 
+    <van-search 
+  value="{{ value }}"
+  placeholder="请输入{{title}}名称"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  shape="round"
+  background="#4fc08d"
+>
+<view slot="action"  data-cid="0" bind:tap="onClick">搜索</view>
+</van-search>
+    
+    <view class="card" wx:for="{{list}}" wx:key="id">
+  <van-card
+  tag="{{item.scenarist.location}}"
+  price="{{item.scenarist.name}}"
+  desc="{{item.scenarist.occupation}} "
+  title="代表作：{{item.amovies[0].title}} {{item.amovies[1].title}} {{item.amovies[2].title}} {{item.amovies[3].title}} {{item.amovies[4].title}}"
+  thumb="{{item.scenarist.imageName}} "
+  
+ />  
+
+  
+</view>
+  </van-tab>
+</van-tabs>
+
+
+
+<view>
+  <van-divider />
+</view>
+<view wx:if="{{flag}}" style="margin:15rpx">
+  <van-row>
+    
+  <van-col offset="2" span="24">
+    <van-button   plain type="info" size="mini" custom-style="width:150rpx;margin-right:65rpx;">
+        第{{page}}页</van-button>
+    <van-button  data-cid='-1'  bind:click="onClick" plain type="info" size="mini" custom-style="width:150rpx;margin-right:65rpx;">上一页</van-button>
+  <van-button plain data-cid='1'  bind:click="onClick" type="info" size="mini" custom-style="width:150rpx">下一页</van-button>
+</van-col>
+</van-row>
+ 
+</view>
+  
+   
+
+
+ 
