@@ -1,0 +1,17 @@
+/* pages/predict/predict.wxss */
+
+.head{
+     font-size: smaller;
+     margin: 10rpx;
+     color: hsl(30, 100%, 50%);
+}
+
+.boxoffice{
+     color: red;
+     font-variant: small-caps;
+}
+
+.movie{
+     text-align:center;
+     color: rebeccapurple;
+}
