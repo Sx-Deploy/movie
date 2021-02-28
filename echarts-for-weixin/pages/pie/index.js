@@ -23,7 +23,7 @@ function initChart(canvas, width, height, dpr) {
       center: ['50%', '50%'],
       radius: ['40%', '60%'],
       data: [{
-        value: 55,
+        value: 556,
         name: '北京'
       }, {
         value: 20,
